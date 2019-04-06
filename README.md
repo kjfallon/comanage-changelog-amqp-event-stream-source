@@ -80,7 +80,7 @@ props/`production` directory.
   you use either script you should edit it to specify the path to your Java JRE.  Java does not need to be in the path 
   of the account that executes this application.
 
-#####Adding System V init script:
+##### Adding System V init script:
 
 `sudo cp comanage-changelog-processor.systemV.init /etc/init.d/comanage-changelog-processor`
 
@@ -88,7 +88,7 @@ props/`production` directory.
 
 `sudo chkconfig --add comanage-changelog-processor`
 
-#####Adding systemd init script:
+##### Adding systemd init script:
 
 `sudo cp comanage-changelog-processor.systemd.init /etc/systemd/system/comanage-changelog-processor.service`
 
