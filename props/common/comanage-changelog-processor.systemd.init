@@ -1,0 +1,13 @@
+[Unit]
+Description=comanage-changelog-processor Spring Boot service
+After=networking.service
+
+[Service]
+User=comanage
+Environment=JAVA_HOME=/opt/java8
+ExecStart=/opt/comanage-changelog-processor/comanage-changelog-amqp-event-stream-source-1.0.jar
+SuccessExitStatus=143
+WorkingDirectory=/opt/comanage-changelog-processor/
+
+[Install]
+WantedBy=multi-user.target
