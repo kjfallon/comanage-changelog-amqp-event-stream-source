@@ -50,9 +50,9 @@ public class COmanageMessageSelector implements MessageSelector {
         try {
             jsonNode = mapper.readTree(payload);
 
-            // If you would like to view nicely formatted JSON objects as the pass by
-            String formatedJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
-            log.debug(formatedJson);
+            // If you would like to view nicely formatted JSON objects as they pass by
+            String formattedJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
+            log.debug(formattedJson);
 
             if (selectAllJson) {
                 // if the property file specifies publishing all JSON then select this message
