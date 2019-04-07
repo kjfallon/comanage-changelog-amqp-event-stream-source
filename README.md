@@ -7,6 +7,8 @@
   and group updates  to an IdM system via event bus messages.  This is authored in Java using the 
   [Spring Framework](https://spring.io/projects/spring-framework).
 
+![Diagram](comanage_amqp_flow_diagram.png)
+
   Using [Maven](https://maven.apache.org/) this application builds to one jar file and one property file.  In the 
   property file you define the full path to your changelog and you specify the RabbitMQ server plus exchange you would 
   like to publish to.  Within COmanage add the Changelog Provisioning Plugin to any CO that you would like to include 
