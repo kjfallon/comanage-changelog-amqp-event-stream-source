@@ -64,17 +64,17 @@ definition stanzas should match the <ssh.deploy.profile> ids in this project's p
 The below will compile the application and file copy it to the path on the localhost specified in the profile with id 
 `localhost` specified in the pom.xml file.  The property file used will be the application.properties file in the 
 props/`localhost` directory.
-* `./mvnw clean package -P localhost`
+* `./mvnw clean install -P localhost`
 
 The below will compile the application and scp it to the host specified in the profile with id 
 `development` specified in the pom.xml file.  The property file used will be the application.properties file in the 
 props/`development` directory.
-* `./mvnw clean package -P development`
+* `./mvnw clean install -P development`
 
 The below will compile the application and scp it to the host specified in the profile with id 
 `production` specified in the pom.xml file.  The property file used will be the application.properties file in the 
 props/`production` directory.
-* `./mvnw clean package -P production`
+* `./mvnw clean install -P production`
 
 ## Linux init scripts
 
